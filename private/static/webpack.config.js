@@ -13,7 +13,7 @@ module.exports = {
   ],
   output: {
     path: __dirname + '/static/',
-    publicPath: '/static/',
+    publicPath: 'http://localhost:4000/static/',
     filename: 'bundle.js',
     hot: true
   },
