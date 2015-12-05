@@ -10,14 +10,14 @@ module.exports = {
     './js/index.js'
   ],
   output: {
-    path: __dirname + '/static/',
+    path: __dirname + '../../../vendor/assets/',
     publicPath: '/static/',
-    filename: 'bundle.js',
+    filename: 'javascripts/bundle.js',
   },
   plugins: [
     new webpack.NoErrorsPlugin(),
     devFlagPlugin,
-    new ExtractTextPlugin('app.css')
+    new ExtractTextPlugin('stylesheets/app.css')
   ],
   module: {
     loaders: [
